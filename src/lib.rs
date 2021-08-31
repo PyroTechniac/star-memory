@@ -8,7 +8,7 @@ mod unix;
 mod win;
 
 #[cfg(unix)]
-pub fn memory() -> procfs::ProcResult<u64> {
+pub fn memory() -> Result<u64, unix::UnixError> {
     unix::get_memory()
 }
 

@@ -11,8 +11,7 @@ win-bindings = { path = "./win-bindings" }
 kernel32-sys = "0.2.2"
 
 [target.'cfg(unix)'.dependencies]
-procfs = "0.10.1"
-libc = "0.2.72"
+sysinfo = "0.20"
 
 [workspace]
 members = [
